@@ -1,0 +1,12 @@
+{
+    "name": "cheesecake/crust",
+    "description": "The crust for the cheesecake",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Meyer",
+            "email": "ak56lk@gmx.net"
+        }
+    ],
+    "require": {}
+}
