@@ -2,6 +2,11 @@
     "name": "cheesecake/crust",
     "description": "The crust for the cheesecake",
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cheesecake\\": "src"
+        }
+    },
     "authors": [
         {
             "name": "Christian Meyer",
