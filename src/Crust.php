@@ -4,6 +4,7 @@
 namespace Cheesecake;
 
 
+use Cheesecake\Http\Request;
 use Cheesecake\Routing\Router;
 
 
