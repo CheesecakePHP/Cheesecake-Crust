@@ -5,6 +5,7 @@ namespace Cheesecake;
 
 
 use Cheesecake\Http\Request;
+use Cheesecake\Http\Response;
 use Cheesecake\Routing\Router;
 
 
@@ -39,6 +40,8 @@ class Crust
             }
 
             Response::sendHeader(Response::HTTP_STATUS_200_OK);
+
+            $result = call_user_func_array([$this->Controller, $this->method], $this->data);
         }
         catch (Error_404 $e) {
             Response::sendHeader(Response::HTTP_STATUS_404_NOT_FOUND);
@@ -61,7 +64,7 @@ class Crust
             ];
         }
 
-        return call_user_func_array([$this->Controller, $this->method], $this->data);
+        return $result;
     }
 
     private function route()
