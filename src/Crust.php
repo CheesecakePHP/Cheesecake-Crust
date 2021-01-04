@@ -4,6 +4,7 @@
 namespace Cheesecake;
 
 
+use Cheesecake\Http\Exception\Error_404;
 use Cheesecake\Http\Request;
 use Cheesecake\Http\Response;
 use Cheesecake\Routing\Router;
